@@ -804,15 +804,17 @@ function duiyuanClick(x,y){
 			   clearArr(shadowShow);
 			   drawArr(startShow);
 	   }else if(MouseOnObj(x, y, leftArrow)){
-		  if(0<big_role_index){
+		  if(big_role_index>=0){
 			   big_role_index--;
+			   if(big_role_index < 0){big_role_index=rolesArray.length-1};
 			   ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	           drawArr(startShow);
 			   teamMember(rolesArray[big_role_index],0);
 		   } 
 	   }else if(MouseOnObj(x, y, rightArrow)){
-		   if(big_role_index<(rolesArray.length-1)){ 
+		   if(big_role_index<=(rolesArray.length-1)){			  
 			    big_role_index++;
+				if(big_role_index > rolesArray.length-1){big_role_index=0};
 				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	            drawArr(startShow);
 			    teamMember(rolesArray[big_role_index],0);
