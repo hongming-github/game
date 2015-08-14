@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="GBK"?>
+<powers>
+	<power>
+		<powerId>1</powerId> 
+		<powerName>残魂大法</powerName>
+		<powerImg>image/skill/Chdf.jpg</powerImg>
+		<powerP>50</powerP>
+		<powerDescription>对敌人造成250点的伤害</powerDescription>
+		<powerSuccess>85</powerSuccess>
+		<powerFunc>PSoulAttack</powerFunc>
+		<powerVar>250</powerVar>
+		<powerOther>特殊说明</powerOther>
+		<effect>image/effect/3.png</effect>
+	</power>
+	<power>
+		<powerId>2</powerId> 
+		<powerName>魔爪无敌</powerName>
+		<powerImg>image/skill/Mzwd.jpg</powerImg>
+		<powerP>30</powerP>
+		<powerDescription>对敌人造成80点的伤害</powerDescription>
+		<powerSuccess>50</powerSuccess>
+		<powerFunc>PMoZhuaWuDi</powerFunc>
+		<powerVar>80</powerVar>
+		<powerOther>发动后，还会追加发动一次，即攻击2次</powerOther>
+		<effect>image/effect/7.png</effect>
+	</power>
+	<power>
+		<powerId>3</powerId> 
+		<powerName>烈火焚身</powerName>
+		<powerImg>image/skill/Lhfs.jpg</powerImg>
+		<powerP>40</powerP>
+		<powerDescription>对敌人造成150点的伤害</powerDescription>
+		<powerSuccess>67</powerSuccess>
+		<powerFunc>PSoulAttack</powerFunc>
+		<powerVar>150</powerVar>
+		<powerOther>特殊说明</powerOther>
+		<effect>image/effect/9.png</effect>
+	</power>
+</powers>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="GBK"?>
+<rolelevels>
+	<role id="1">
+		<level >    
+		   <exp>2</exp> 
+		   <attr>
+		     <hp>25</hp>
+		     <sp>5</sp>
+		     <speed>10</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 hp+5</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>19</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>5</sp>
+		     <speed>0</speed>
+		     <atk>5</atk>
+		     <def>3</def>
+			 <mp>10</mp>
+			 <movement>1</movement>
+			 <info>林秋水特殊增益 mp+10</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>32</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>20</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 mp+10</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>50</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>10</sp>
+		     <speed>0</speed>
+		     <atk>15</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 atk+5</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>70</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>5</sp>
+		     <speed>0</speed>
+		     <atk>10</atk>
+		     <def>5</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊 def+5</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>95</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>10</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 atk+5</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>125</exp> 
+		   <attr>
+		     <hp>10</hp>
+		     <sp>0</sp>
+		     <speed>25</speed>
+		     <atk>10</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 atk+5</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>165</exp> 
+		   <attr>
+		     <hp>40</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>20</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 sp+10</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>210</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>20</sp>
+		     <speed>30</speed>
+		     <atk>15</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 def+10</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>260</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>0</sp>
+		     <speed>20</speed>
+		     <atk>10</atk>
+		     <def>17</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>林秋水特殊增益 mp+20</info>
+		   </attr>
+		</level>
+	</role>
+	<role id="2">
+		<level >    
+		   <exp>2</exp> 
+		   <attr>
+		     <hp>25</hp>
+		     <sp>5</sp>
+		     <speed>10</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>19</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>5</sp>
+		     <speed>0</speed>
+		     <atk>5</atk>
+		     <def>3</def>
+			 <mp>10</mp>
+			 <movement>1</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>32</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>20</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>50</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>10</sp>
+		     <speed>0</speed>
+		     <atk>15</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>70</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>5</sp>
+		     <speed>0</speed>
+		     <atk>10</atk>
+		     <def>5</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>95</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>10</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>125</exp> 
+		   <attr>
+		     <hp>10</hp>
+		     <sp>0</sp>
+		     <speed>25</speed>
+		     <atk>10</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>165</exp> 
+		   <attr>
+		     <hp>40</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>20</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>210</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>20</sp>
+		     <speed>30</speed>
+		     <atk>15</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>260</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>0</sp>
+		     <speed>20</speed>
+		     <atk>10</atk>
+		     <def>17</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+	</role>
+	<role id="3">
+		<level >    
+		   <exp>2</exp> 
+		   <attr>
+		     <hp>25</hp>
+		     <sp>5</sp>
+		     <speed>10</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>19</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>5</sp>
+		     <speed>0</speed>
+		     <atk>5</atk>
+		     <def>3</def>
+			 <mp>10</mp>
+			 <movement>1</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>32</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>20</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>50</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>10</sp>
+		     <speed>0</speed>
+		     <atk>15</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>70</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>5</sp>
+		     <speed>0</speed>
+		     <atk>10</atk>
+		     <def>5</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>95</exp> 
+		   <attr>
+		     <hp>20</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>10</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>125</exp> 
+		   <attr>
+		     <hp>10</hp>
+		     <sp>0</sp>
+		     <speed>25</speed>
+		     <atk>10</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>165</exp> 
+		   <attr>
+		     <hp>40</hp>
+		     <sp>0</sp>
+		     <speed>0</speed>
+		     <atk>0</atk>
+		     <def>0</def>
+			 <mp>20</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>210</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>20</sp>
+		     <speed>30</speed>
+		     <atk>15</atk>
+		     <def>0</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+		<level >    
+		   <exp>260</exp> 
+		   <attr>
+		     <hp>0</hp>
+		     <sp>0</sp>
+		     <speed>20</speed>
+		     <atk>10</atk>
+		     <def>17</def>
+			 <mp>0</mp>
+			 <movement>0</movement>
+			 <info>0</info>
+		   </attr>
+		</level>
+	</role>
+</rolelevels>

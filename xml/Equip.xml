@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="GBK"?>
+<equips>
+	<equip>
+		<equipId>1</equipId>
+		<equipName>骑士之剑</equipName>
+		<equipImg>image/equip/QSZJ.jpg</equipImg>
+		<equipGold>300</equipGold>
+		<equipDescription>个人攻击力加10</equipDescription>
+		<equipVar>10</equipVar>
+		<equipFunc>equipaddATK</equipFunc>
+		<equipType>0</equipType>
+	</equip>
+	<equip>
+		<equipId>2</equipId>
+		<equipName>骑士之盾</equipName>
+		<equipImg>image/equip/QSZD.jpg</equipImg>
+		<equipGold>350</equipGold>
+		<equipDescription>个人防御力加10</equipDescription>
+		<equipVar>10</equipVar>
+		<equipFunc>equipaddDEF</equipFunc>
+		<equipType>0</equipType>
+	</equip>
+	<equip>
+		<equipId>3</equipId>
+		<equipName>天空圣水</equipName>
+		<equipImg>image/equip/TKSS.jpg</equipImg>
+		<equipGold>600</equipGold>
+		<equipDescription>个人HP加100</equipDescription>
+		<equipVar>100</equipVar>
+		<equipFunc>equipaddHP</equipFunc>
+		<equipType>1</equipType>
+	</equip>
+</equips>

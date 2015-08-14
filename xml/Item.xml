@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+<items>
+	<item>
+		<itemId>1</itemId>
+		<itemName>小补丸</itemName>
+		<itemImg>image/item/Xbw.png</itemImg>
+		<itemGold>60</itemGold>
+		<itemDescription>恢复hp60</itemDescription>
+		<itemFunc>IRecoverHP</itemFunc>
+		<itemVar>60</itemVar>
+		<itemOther>特殊说明</itemOther>
+		<effect>image/effect/1.png</effect>
+	</item>
+	<item>
+		<itemId>2</itemId>
+		<itemName>大效草</itemName>
+		<itemImg>image/item/Dxc.png</itemImg>
+		<itemGold>120</itemGold>
+		<itemDescription>恢复mp30</itemDescription>
+		<itemFunc>IRecoverMP</itemFunc>
+		<itemVar>30</itemVar>
+		<itemOther>特殊说明</itemOther>
+		<effect>image/effect/4.png</effect>
+	</item>
+	<item>
+		<itemId>3</itemId>
+		<itemName>复活草</itemName>
+		<itemImg>image/item/Fhc.png</itemImg>
+		<itemGold>200</itemGold>
+		<itemDescription>复活一位阵亡队员</itemDescription>
+		<itemFunc>IRecoverHP</itemFunc>
+		<itemVar>1</itemVar>
+		<itemOther>hp恢复为1</itemOther>
+		<effect>image/effect/7.png</effect>
+	</item>
+	<item>
+		<itemId>4</itemId>
+		<itemName>怒之源</itemName>
+		<itemImg>image/item/Fhc.png</itemImg>
+		<itemGold>100</itemGold>
+		<itemDescription>给1位队员怒气加满</itemDescription>
+		<itemFunc>IRecoverPower</itemFunc>
+		<itemVar>0</itemVar>
+		<itemOther>特殊说明</itemOther>
+		<effect>image/effect/7.png</effect>
+	</item>
+</items>

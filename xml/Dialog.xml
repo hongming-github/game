@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="GBK"?>
+<dialogs>
+	<dialog id="1">
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>又是你们。。。</sentence>
+		</content>
+		<content>
+			<characterName>地震</characterName>
+			<sentence>哈哈。。小子，看你这回往哪儿跑！</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>你们到底想怎么样？</sentence>
+		</content>
+		<content>
+			<characterName>地震</characterName>
+			<sentence>斩草除根！</sentence>
+		</content>
+		<content>
+			<characterName>冷剑</characterName>
+			<sentence>老大，你在旁边歇着，让我们动手把这小子解决了。</sentence>
+		</content>
+		<content>
+			<characterName>快剑</characterName>
+			<sentence>兄弟们上！</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>好多人。。看来只能智取了</sentence>
+		</content>
+	</dialog>
+	<dialog id="2">
+	    <content>
+			<characterName>快剑</characterName>
+			<sentence>老大，我们失手了，让他给跑了。</sentence>
+		</content>
+		<content>
+			<characterName>冷剑</characterName>
+			<sentence>老大，我们差一点就得手了。</sentence>
+		</content>
+	    <content>
+			<characterName>地震</characterName>
+			<sentence>一群没用的废物！林秋水，你是逃不出我们魂组织的追杀的！</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>杀父之仇，永生难忘，我一定会为父报仇，让你们血债血偿！</sentence>
+		</content>
+
+	</dialog>
+	<dialog id="3">
+	    <content>
+			<characterName>小烈火</characterName>
+			<sentence>兄台为何如此狼狈？</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>……你是谁？……</sentence>
+		</content>
+	    <content>
+			<characterName>小烈火</characterName>
+			<sentence>我是游侠小烈火，见你似有困难，前来一看。</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>我是残魂教弟子，道统被灭，我被追杀至此。</sentence>
+		</content> 
+			    <content>
+			<characterName>小烈火</characterName>
+			<sentence>岂有此理，灭人道统，还赶尽杀绝。</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>我父亲为我杀出血路，如今我只想亲手复仇。</sentence>
+		</content>
+	    <content>
+			<characterName>小烈火</characterName>
+			<sentence>既然如此，就与道兄一路。</sentence>
+		</content>
+		<content>
+			<characterName>林秋水</characterName>
+			<sentence>秋水不胜感激！</sentence>
+		</content> 
+	</dialog>
+</dialogs>
