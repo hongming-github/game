@@ -516,12 +516,12 @@ function cCheck(e) {
             clearArray(statusArray);
             clearArray(speArray);
             enemysIndex++;
-            if (enemysIndex >= enemysArray.length) {
+            if (enemysIndex > enemysArray.length-1) {
                 enemysIndex = 0;
             }
             while (enemysArray[enemysIndex].HP <= 0) {
                 enemysIndex++;
-                if (enemysIndex >= enemysArray.length) {
+                if (enemysIndex > enemysArray.length-1) {
                     enemysIndex = 0;
                 }
             }
