@@ -578,13 +578,13 @@ function cCheck(e) {
             clearArray(statusArray);
             clearArray(speArray);
             tmpIndex++;
-            if (tmpIndex >= rolesArray.length) {
+            if (tmpIndex > rolesArray.length-1) {
                 tmpIndex = 0;
             }
 			while (rolesArray[tmpIndex].HP <= 0) {
                 tmpIndex++;
-                if (tmpIndex >=rolesArray.length) {
-                    tmpIndex =0;
+                if (tmpIndex > rolesArray.length-1) {
+                    tmpIndex = 0;
                 }
             }
             showRolesDetailStatus(rolesArray[tmpIndex],statusBg.sx,statusBg.sy);
