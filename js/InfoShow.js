@@ -1258,7 +1258,7 @@ function tick() {
     if (delta > interval) {
     // 这里不能简单then=now，否则还会出现上边简单做法的细微时间差问题。例如fps=10，每帧100ms，而现在每16ms（60fps）执行一次draw。16*7=112>100，需要7次才实际绘制一次。这个情况下，实际10帧需要112*10=1120ms>1000ms才绘制完成。
     then = now - (delta % interval);
-    ingamewords(); // ... Code for Drawing the Frame ...
+    ingamewords(); //Code for Drawing the Frame
 	}
 }
 
@@ -1575,9 +1575,9 @@ if(index==10){
 }
 //说明框,在数组arr中找到index的道具,which==0说明是道具整理的道具，==1说明是秘技,==2说明是武器商店==3说明是怒技整理的仓库
 function getShuoMingText(arr,index,which){ 
-	   
-	if(which==0){
-		 everything2.push(informaitionSow);//放入说明的背景框
+	
+	if(which==0){//道具
+		everything2.push(informaitionSow);//放入说明的背景框
         for (var j = 0; j < itemArrays.length; j++) {
             if (arr[index].id == itemArrays[j].id) {
                 if (arr[index].num > 0) {
@@ -1592,8 +1592,8 @@ function getShuoMingText(arr,index,which){
                 }
             }
         }
-	}else if(which==1){
-		 everything2.push(informaitionSow);//放入说明的背景框
+	}else if(which==1){//秘技
+		everything2.push(informaitionSow);//放入说明的背景框
 	    for (var j = 0; j < skillArrays.length; j++) {
 			if(arr[index]==skillArrays[j].id){
 			   var skillname = new text(skillArrays[j].name+":",0,0,informaitionSow.sx+10,informaitionSow.sy+150, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
@@ -1609,8 +1609,8 @@ function getShuoMingText(arr,index,which){
 			   everything2.push(dis1);
 			}
 		}
-	}else if(which==2){
-		 everything2.push(informaitionSow);//放入说明的背景框
+	}else if(which==2){//武器
+		everything2.push(informaitionSow);//放入说明的背景框
 		 for (var j = 0; j < equipArrays.length; j++) {
             if (arr[index].id == equipArrays[j].id) {
                 if (arr[index].num > 0) {
@@ -1630,6 +1630,71 @@ function getShuoMingText(arr,index,which){
             if (arr[index] == powerArrays[j].id) {
                  var name1 = new text(powerArrays[j].name+":",0,0,DJZLBg.sx+50,DJZLBg.sy+340, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
 				 var powerDis=new text(powerArrays[j].discripe,0,0,DJZLBg.sx+50,DJZLBg.sy+380, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+				 everything2.push(name1);
+				 everything2.push(powerDis);
+            }
+        }
+	}
+}
+/*
+仓库中的说明
+*/
+function getShuoMingText1(arr,index,which){ 
+		if(which==00){//道具
+		everything2.push(informaitionSow1);//放入说明的背景框
+        for (var j = 0; j < itemArrays.length; j++) {
+            if (arr[index].id == itemArrays[j].id) {
+                if (arr[index].num > 0) {
+					 var itemname = new text(itemArrays[j].name+":",0,0,informaitionSow.sx+90,informaitionSow.sy+150, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+		             var itempicture=new Image();
+                     itempicture.src=itemArrays[j].img;
+					 var itemP=new picture(0,0,informaitionSow.sx+30,informaitionSow.sy+120,rpx,rpx,itempicture);
+                     var dis = new text(itemArrays[j].discripe,0,0,informaitionSow.sx+40,informaitionSow.sy+200, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+                     everything2.push(itemP);
+					 everything2.push(itemname);
+					 everything2.push(dis);
+                }
+            }
+        }
+	}else if(which==10){//秘技
+		everything2.push(informaitionSow1);//放入说明的背景框
+	    for (var j = 0; j < skillArrays.length; j++) {
+			if(arr[index]==skillArrays[j].id){
+			   var skillname = new text(skillArrays[j].name+":",0,0,informaitionSow.sx+30,informaitionSow.sy+150, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+               var allText=skillArrays[j].discripe;
+               if(allText.length>10){
+				   var subAllText=allText.substring(10,allText.length);
+				   allText=allText.substring(0,10);
+			   }
+			   var dis = new text(allText,0,0,informaitionSow.sx+25,informaitionSow.sy+200, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+			   var dis1 = new text(subAllText,0,0,informaitionSow.sx+25,informaitionSow.sy+248, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+               everything2.push(skillname);
+			   everything2.push(dis);
+			   everything2.push(dis1);
+			}
+		}
+	}else if(which==20){//武器
+		everything2.push(informaitionSow1);//放入说明的背景框
+		 for (var j = 0; j < equipArrays.length; j++) {
+            if (arr[index].id == equipArrays[j].id) {
+                if (arr[index].num > 0) {
+					 var itemname = new text(equipArrays[j].name+":",0,0,informaitionSow.sx+90,informaitionSow.sy+150, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+		             var itempicture=new Image();
+                     itempicture.src=equipArrays[j].img;
+					 var itemP=new picture(0,0,informaitionSow.sx+30,informaitionSow.sy+120,rpx,rpx,itempicture);
+                     var dis = new text(equipArrays[j].discripe,0,0,informaitionSow.sx+40,informaitionSow.sy+200, "rgb(255,255,255)", "bold 20px Microsoft Yahei");
+                     everything2.push(itemP);
+					 everything2.push(itemname);
+					 everything2.push(dis);
+                }
+            }
+        }
+	}else if(which==30){//怒技能的说明
+		everything2.push(informaitionSow1);//放入说明的背景框
+	     for (var j = 0; j < powerArrays.length; j++) {
+            if (arr[index] == powerArrays[j].id) {
+                 var name1 = new text(powerArrays[j].name+":",0,0,DJZLBg.sx+565,DJZLBg.sy+230, "rgb(255,255,255)", "bold 18px Microsoft Yahei");
+				 var powerDis=new text(powerArrays[j].discripe,0,0,DJZLBg.sx+565,DJZLBg.sy+270, "rgb(255,255,255)", "bold 18px Microsoft Yahei");
 				 everything2.push(name1);
 				 everything2.push(powerDis);
             }
@@ -2179,10 +2244,10 @@ function backToBag(obj,fromArr,destArr,caSeNum,select,drop){
 		  }
 	  }
 	  if(caSeNum==5){
-		  if((i==storehouse.additems.length-1)&&tempp==0){break;}
-		  else if((i==storehouse.addpowers.length-1)&&tempp==3){break;}
-			  else if((i==storehouse.addequips.length-1)&&tempp==2){break;}
-			  else if((i==storehouse.addskills.length-1)&&tempp==1){break;}
+		  if((i==storehouse.additems.length-1)&&tempp==00){break;}
+		  else if((i==storehouse.addpowers.length-1)&&tempp==30){break;}
+			  else if((i==storehouse.addequips.length-1)&&tempp==20){break;}
+			  else if((i==storehouse.addskills.length-1)&&tempp==10){break;}
 		  else if(i==storehouse.additems.length-1){break;}
 		  }
 	  else if(caSeNum==6){if(i==storehouse.addpowers.length-1){break;}}
@@ -2193,13 +2258,13 @@ function backToBag(obj,fromArr,destArr,caSeNum,select,drop){
 	}
     //把中转战的道具放回人物的
 	if(caSeNum==5){
-		if(tempp==0){clearArr(storehouse.additems);
+		if(tempp==00){clearArr(storehouse.additems);
 		storehouse.additems=[].concat(storehouse.tempArr);}
-		else if(tempp==2){clearArr(storehouse.addequips);
+		else if(tempp==20){clearArr(storehouse.addequips);
 		storehouse.addequips=[].concat(storehouse.tempArr);}
-		else if(tempp==1){clearArr(storehouse.addskills);
+		else if(tempp==10){clearArr(storehouse.addskills);
 		storehouse.addskills=[].concat(storehouse.tempArr);}
-		else if(tempp==3){clearArr(storehouse.addpowers);
+		else if(tempp==30){clearArr(storehouse.addpowers);
 		storehouse.addpowers=[].concat(storehouse.tempArr);}
 		else{clearArr(storehouse.additems);
 		storehouse.additems=[].concat(storehouse.tempArr);}
@@ -2251,7 +2316,7 @@ function showCangKU(obj,tempp){
 	   shadowShow.push(CloseImg); 
 
 
-if(tempp==2){
+if(tempp==20){
 //	cangKuClick(x,y,storehouse.addequips,tempp);
 	   	var tt=0;
 	if(storehouse.addequips.length!=0){
@@ -2274,7 +2339,7 @@ if(tempp==2){
 	}
 	CKselect.sx=173;drawBigMap();
 }
-if(tempp==0){
+if(tempp==00){
 //	cangKuClick(x,y,storehouse.additems ,tempp);
 		var t = 0;
     for (var i = 0; i < storehouse.additems.length; i++) {
@@ -2298,7 +2363,7 @@ if(tempp==0){
 	CKselect.sx=302;drawBigMap();
 }
 
-if(tempp==1){
+if(tempp==10){
 //	cangKuClick(x,y,obj,tempp);
               var tt=0;
 	if(storehouse.addskills.length!=0){
@@ -2319,7 +2384,7 @@ if(tempp==1){
 	CKselect.sx=430;drawBigMap();
 }
 
-if(tempp==3){
+if(tempp==30){
 //	cangKuClick(x,y,obj,tempp);
 	var tt=0;
 	if(storehouse.addpowers.length!=0){

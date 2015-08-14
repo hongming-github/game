@@ -89,22 +89,22 @@ function cCheck(e) {
 		console.log("仓库");	
 		if(x>173&&x<290&&y>62&&y<102){	
 			clearArr(everything1);dingzhukuangRight=[0,0,0,0,0];
-		    tempp=2;
+		    tempp=20;
 			showCangKU(storehouse.addequips,tempp);	
 		}else if(x>300&&x<417&&y>62&&y<102){	
 			clearArr(everything1);dingzhukuangRight=[0,0,0,0,0];
-			tempp=0;
+			tempp=00;
 			showCangKU(storehouse.additems,tempp);
 		}else if(x>430&&x<547&&y>62&&y<102){
 			clearArr(everything1);dingzhukuangRight=[0,0,0,0,0];
-		    tempp=1;
+		    tempp=10;
 	    	showCangKU(storehouse.addskills,tempp);			
 		}else if(x>557&&x<676&&y>62&&y<102){
 			clearArr(everything1);dingzhukuangRight=[0,0,0,0,0];
-		    tempp=3;
+		    tempp=30;
 		    showCangKU(storehouse.addpowers,tempp);			
 		}else if(MouseOnObj(x, y, CloseImg)){
-			  tempp=2;
+			  tempp=20;
 			  clearArr(everything1);
 			  dingzhukuangLeft=[0,0,0,0,0];
 		      dingzhukuangRight=[0,0,0,0,0,0];
@@ -113,10 +113,10 @@ function cCheck(e) {
 			  clearArr(shadowShow);
 			  drawArr(startShow);
 		}
-		if(tempp==0){cangKuClick(x,y,storehouse.additems,tempp);}
-		if(tempp==1){cangKuClick(x,y,storehouse.addskills,tempp);}
-		if(tempp==2){cangKuClick(x,y,storehouse.addequips,tempp);}
-		if(tempp==3){cangKuClick(x,y,storehouse.addpowers,tempp);}
+		if(tempp==00){cangKuClick(x,y,storehouse.additems,tempp);}
+		if(tempp==10){cangKuClick(x,y,storehouse.addskills,tempp);}
+		if(tempp==20){cangKuClick(x,y,storehouse.addequips,tempp);}
+		if(tempp==30){cangKuClick(x,y,storehouse.addpowers,tempp);}
 	}else
 	if(itemStore){//道具商店
 		console.log("道具商店  ");
@@ -190,10 +190,10 @@ function cCheck(e) {
 			else if(itemOption==2){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,false);}
 			//如果点击了仓库的丢弃
 			else if(itemOption==3){
-				if(tempp==0){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
-				else if(tempp==1){backToBag(rolesArray[big_role_index],storehouse.addskills,rolesArray[big_role_index].skills,5,dingzhukuangRight,true);}
-				else if(tempp==2){backToBag(rolesArray[big_role_index],storehouse.addequips,rolesArray[big_role_index].equips,5,dingzhukuangRight,true);}
-				else if(tempp==3){backToBag(rolesArray[big_role_index],storehouse.addpowers,rolesArray[big_role_index].powers,5,dingzhukuangRight,true);}
+				if(tempp==00){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
+				else if(tempp==10){backToBag(rolesArray[big_role_index],storehouse.addskills,rolesArray[big_role_index].skills,5,dingzhukuangRight,true);}
+				else if(tempp==20){backToBag(rolesArray[big_role_index],storehouse.addequips,rolesArray[big_role_index].equips,5,dingzhukuangRight,true);}
+				else if(tempp==30){backToBag(rolesArray[big_role_index],storehouse.addpowers,rolesArray[big_role_index].powers,5,dingzhukuangRight,true);}
 				else {backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
 		//	backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);
 				}
@@ -291,15 +291,15 @@ function cCheck(e) {
 				      }
 				   }
 			   }
-			   else if(itemOption==3&&tempp==3){
+			   else if(itemOption==3&&tempp==30){
 				   if(dragNum<storehouse.addpowers[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addpowers[index].num+274;}
 				 }
-				 else if(itemOption==3&&tempp==1){
+				 else if(itemOption==3&&tempp==10){
 				   if(dragNum<storehouse.addskills[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addskills[index].num+274;}
 				 }
-				 else if(itemOption==3&&tempp==2){
+				 else if(itemOption==3&&tempp==20){
 				   if(dragNum<storehouse.addequips[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addequips[index].num+274;}
 				 }
@@ -405,7 +405,7 @@ function cCheck(e) {
 	    	if(MouseOnPic(x, y, duiyuanButton)){//点击队员
 			   teamMember(rolesArray[big_role_index],0);
 	    	}else if(MouseOnPic(x, y, changkuButton)){//点击仓库
-				tempp=2;
+				tempp=20;
 	    		showCangKU(storehouse.addequips,tempp);
 	    	}
 	    }else if(big_option==3){

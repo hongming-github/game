@@ -845,23 +845,23 @@ function cangKuMove(x,y,arr2,tempp){
 	 if(x>DJZLBg.sx+366&&x<DJZLBg.sx+469&&y>DJZLBg.sy+384&&y<DJZLBg.sy+412){//丢弃按钮
 	    mrec.swidth=103; mrec.sheight=28;mrec.sx=DJZLBg.sx+366;mrec.sy = DJZLBg.sy+384;everything2.push(mrec);
 	 }else if(x>DJZLBg.sx+33&&x<DJZLBg.sx+257&&y>DJZLBg.sy+76&&y<DJZLBg.sy+130&&(b[0]==1)){//仓库的第1个按钮
-        if(dingzhukuangRight[0]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+76;everything2.push(mrec);getShuoMingText(arr2,0,tempp);}
-		else if(dingzhukuangRight[0]==1){ getShuoMingText(arr2,0,tempp);}
+        if(dingzhukuangRight[0]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+76;everything2.push(mrec);getShuoMingText1(arr2,0,tempp);}
+		else if(dingzhukuangRight[0]==1){ getShuoMingText1(arr2,0,tempp);}
 	 }else if(x>DJZLBg.sx+33&&x<DJZLBg.sx+257&&y>DJZLBg.sy+133&&y<DJZLBg.sy+184&&(b[1]==1)){//仓库的第2个按钮
-        if(dingzhukuangRight[1]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+133;everything2.push(mrec);getShuoMingText(arr2,1,tempp);}
-		else if(dingzhukuangRight[1]==1){ getShuoMingText(arr2,1,tempp);}
+        if(dingzhukuangRight[1]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+133;everything2.push(mrec);getShuoMingText1(arr2,1,tempp);}
+		else if(dingzhukuangRight[1]==1){ getShuoMingText1(arr2,1,tempp);}
 	 }else if(x>DJZLBg.sx+33&&x<DJZLBg.sx+257&&y>DJZLBg.sy+190&&y<DJZLBg.sy+238&&(b[2]==1)){//仓库的第3个按钮
-        if(dingzhukuangRight[2]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+190;everything2.push(mrec);getShuoMingText(arr2,2,tempp);}
-		else if(dingzhukuangRight[2]==1){ getShuoMingText(arr2,2,tempp);}
+        if(dingzhukuangRight[2]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+190;everything2.push(mrec);getShuoMingText1(arr2,2,tempp);}
+		else if(dingzhukuangRight[2]==1){ getShuoMingText1(arr2,2,tempp);}
 	 }else if(x>DJZLBg.sx+33&&x<DJZLBg.sx+257&&y>DJZLBg.sy+247&&y<DJZLBg.sy+392&&(b[3]==1)){//仓库的第4个按钮
-		if(dingzhukuangRight[3]==0){  mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+247;everything2.push(mrec);getShuoMingText(arr2,3,tempp);}
-		else if(dingzhukuangRight[3]==1){ getShuoMingText(arr2,3,tempp);}
+		if(dingzhukuangRight[3]==0){  mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+247;everything2.push(mrec);getShuoMingText1(arr2,3,tempp);}
+		else if(dingzhukuangRight[3]==1){ getShuoMingText1(arr2,3,tempp);}
 	 }else if(x>DJZLBg.sx+33&&x<DJZLBg.sx+257&&y>DJZLBg.sy+314&&y<DJZLBg.sy+446&&(b[4]==1)){//仓库的第5个按钮
-	    if(dingzhukuangRight[4]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+304;everything2.push(mrec);getShuoMingText(arr2,4,tempp);}
-		else if(dingzhukuangRight[4]==1){ getShuoMingText(arr2,4,tempp);}
+	    if(dingzhukuangRight[4]==0){ mrec.swidth=222;mrec.sheight=51;mrec.sx=DJZLBg.sx+33;mrec.sy = DJZLBg.sy+304;everything2.push(mrec);getShuoMingText1(arr2,4,tempp);}
+		else if(dingzhukuangRight[4]==1){ getShuoMingText1(arr2,4,tempp);}
 	 }else if(x>DJZLBg.sx+33&&x<DJZLBg.sx+257&&y>DJZLBg.sy+371&&y<DJZLBg.sy+500&&(b[5]==1)){//仓库的第6个按钮
-		if(dingzhukuangRight[5]==0){ mrec.swidth=222;mrec.sheight=49;mrec.sx=DJZLBg.sx+324;mrec.sy = DJZLBg.sy+361;everything2.push(mrec);getShuoMingText(arr2,5,tempp);}
-		else if(dingzhukuangRight[5]==1){ getShuoMingText(arr2,5,tempp);}
+		if(dingzhukuangRight[5]==0){ mrec.swidth=222;mrec.sheight=49;mrec.sx=DJZLBg.sx+324;mrec.sy = DJZLBg.sy+361;everything2.push(mrec);getShuoMingText1(arr2,5,tempp);}
+		else if(dingzhukuangRight[5]==1){ getShuoMingText1(arr2,5,tempp);}
 	 }
   }
   drawBigMap();

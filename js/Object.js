@@ -491,6 +491,7 @@ function picOnload(){
 	nujiButton=new pic(0,0,585,6,75,75,0,1612,120,120,UI_butto);
 	mijiButton=new pic(0,0,660,6,75,75,0,744,120,120,UI_butto);
 	informaitionSow=new picture(0,0,685,76, 207,501, SuoMing);
+	informaitionSow1=new picture(0,0,702,47, 207,501, SuoMing);
 //∂”ŒÈ“ª¿∏
 	duiWuButton=new pic(0,0,885,85,75,75,0,868,120,120,UI_butto);
 	duiWuButton1=new pic(0,0,885,85,70,70,124,868,120,120,UI_butto);

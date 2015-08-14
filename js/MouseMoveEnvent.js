@@ -64,10 +64,10 @@ function mMove(e) {
 	}else
 	if(cangKuShow){//显示仓库
 		console.log("显示仓库");
-		if(tempp==0){cangKuMove(mx,my,storehouse.additems,tempp);}
-		if(tempp==1){cangKuMove(mx,my,storehouse.addskills,tempp);}
-		if(tempp==2){cangKuMove(mx,my,storehouse.addequips,tempp);}
-		if(tempp==3){cangKuMove(mx,my,storehouse.addpowers,tempp);}	
+		if(tempp==00){cangKuMove(mx,my,storehouse.additems,tempp);}
+		if(tempp==10){cangKuMove(mx,my,storehouse.addskills,tempp);}
+		if(tempp==20){cangKuMove(mx,my,storehouse.addequips,tempp);}
+		if(tempp==30){cangKuMove(mx,my,storehouse.addpowers,tempp);}	
 	}else
 	if(nextloading){//加载下一关
 		console.log("加载下一关的资源");
@@ -136,15 +136,15 @@ function mMove(e) {
 						  dragNum=Math.floor(teamMoney/returnEquipPrice(store.equips[index].id));
 					   }
 				   }
-				   else if(itemOption==3&&tempp==3){
+				   else if(itemOption==3&&tempp==30){
 					   dragNum=1;
 					  // dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addpowers[index].num);
 				   }
-				   else if(itemOption==3&&tempp==1){
+				   else if(itemOption==3&&tempp==10){
 					   dragNum=1;
 					  // dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addpowers[index].num);
 				   }
-				   else if(itemOption==3&&tempp==2){				   
+				   else if(itemOption==3&&tempp==20){				   
 					   dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addequips[index].num);
 				   }
 					   else{dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.additems[index].num);}
