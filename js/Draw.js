@@ -122,7 +122,7 @@ function drawAll() {
 		//fps = 20;
 		//interval = 1000/fps;
 	    //now = Date.now();
-	  ¡¡//delta = now - then; //&& delta > interval 
+	  //delta = now - then; //&& delta > interval 
 	if(mapLevel==1){ 
 	//	ctx.drawImage(GuanKa,a[GK_I],b[GK_I],142,142,bg.sx+1105,bg.sy+429,142,142);
 		//if( delta > interval){
