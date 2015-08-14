@@ -606,7 +606,7 @@ function drawProgress(){
 				loadX=0;
 				     dCtx.clearRect(0, 0, canvasWidth, canvasHeight);
 					  window.cancelAnimationFrame(handle);
-			         console.log("图片一共加载"+next);
+			         console.log("图片共加载"+next);
 				  
 				init();}
 }

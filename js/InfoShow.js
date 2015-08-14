@@ -1259,7 +1259,7 @@ function tick() {
     // 这里不能简单then=now，否则还会出现上边简单做法的细微时间差问题。例如fps=10，每帧100ms，而现在每16ms（60fps）执行一次draw。16*7=112>100，需要7次才实际绘制一次。这个情况下，实际10帧需要112*10=1120ms>1000ms才绘制完成。
     then = now - (delta % interval);
     ingamewords(); // ... Code for Drawing the Frame ...
-    }
+	}
 }
 
 //整理的函数
