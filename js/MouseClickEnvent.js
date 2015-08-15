@@ -224,7 +224,7 @@ function cCheck(e) {
 			      dragNum--;
 				  huaKuai.sx=dragNum*180/rolesArray[big_role_index].items[index].num+274;
 			   }
-		   }else if(itemOption==2||itemOption==3||itemOption==9||itemOption==11){
+		   }else if(itemOption==2||itemOption==3||itemOption==9||itemOption==11||itemOption==12){
 		       if(dingzhukuangRight[0]==1){index=0;}
 			   else if(dingzhukuangRight[1]==1){index=1;}
 			   else if(dingzhukuangRight[2]==1){index=2;}
@@ -243,6 +243,17 @@ function cCheck(e) {
 					  huaKuai.sx=dragNum*180/store.equips[index].num+274;
 				   }
 			   }
+			   else if(itemOption==12&&tempp==00){
+				      if(dragNum>0){
+					  dragNum--;
+					  huaKuai.sx=dragNum*180/storehouse.additems[index].num+394;}
+				 }
+			   else if(itemOption==12&&tempp==20){
+				   	  if(dragNum>0){
+                      dragNum--;
+					  huaKuai.sx=dragNum*180/storehouse.addequips[index].num+394;
+				   }
+			   }
 			   else{if(dragNum>0){dragNum--;huaKuai.sx=dragNum*180/storehouse.additems[index].num+274;}}
 		   }
 		   selsectNum.name="您选择了  "+dragNum+"  份该道具";
@@ -254,7 +265,6 @@ function cCheck(e) {
 			   else if(dingzhukuangLeft[2]==1){index=2;}
 			   else if(dingzhukuangLeft[3]==1){index=3;}
 			   else if(dingzhukuangLeft[4]==1){index=4;}
-
 		//	   console.log(index+" "+dragNum+"rolesArray[big_role_index].items[index].num"+rolesArray[big_role_index].items[index].num);
 			   if(dragNum<rolesArray[big_role_index].items[index].num){
 			      dragNum++;
@@ -291,7 +301,11 @@ function cCheck(e) {
 				      }
 				   }
 			   }
-			   else if(itemOption==12&&tempp==30){
+			   	else if(itemOption==12&&tempp==00){
+				   if(dragNum<storehouse.additems[index].num)
+				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.additems[index].num+394;}
+				 }
+			    else if(itemOption==12&&tempp==30){
 				   if(dragNum<storehouse.addpowers[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addpowers[index].num+274;}
 				 }
@@ -301,7 +315,7 @@ function cCheck(e) {
 				 }
 				 else if(itemOption==12&&tempp==20){
 				   if(dragNum<storehouse.addequips[index].num)
-				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addequips[index].num+274;}
+				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addequips[index].num+394;}
 				 }
 			   else{if(dragNum<storehouse.additems[index].num){dragNum++;huaKuai.sx=dragNum*180/storehouse.additems[index].num+274;}}
 		   }
