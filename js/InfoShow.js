@@ -2246,8 +2246,8 @@ function backToBag(obj,fromArr,destArr,caSeNum,select,drop){
 	  if(caSeNum==5){
 		  if((i==storehouse.additems.length-1)&&tempp==00){break;}
 		  else if((i==storehouse.addpowers.length-1)&&tempp==30){break;}
-			  else if((i==storehouse.addequips.length-1)&&tempp==20){break;}
-			  else if((i==storehouse.addskills.length-1)&&tempp==10){break;}
+		  else if((i==storehouse.addequips.length-1)&&tempp==20){break;}
+		  else if((i==storehouse.addskills.length-1)&&tempp==10){break;}
 		  else if(i==storehouse.additems.length-1){break;}
 		  }
 	  else if(caSeNum==6){if(i==storehouse.addpowers.length-1){break;}}
@@ -2291,7 +2291,7 @@ function backToBag(obj,fromArr,destArr,caSeNum,select,drop){
 	sureToFX=false;
 	clearArr(confirmArray);
 	clearArr(storehouse.tempArr);
-	if(caSeNum==5){showCangKU(fromArr,tempp);}
+	if(caSeNum==5&&(tempp==00||tempp==10||tempp==20||tempp==30)){showCangKU(fromArr,tempp);}
 	else {ZhengLi(obj,caSeNum);}
 	
 }

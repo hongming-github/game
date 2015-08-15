@@ -305,7 +305,7 @@ function isOneThere(arr){
    return false;
 }
 
-//道具整理的函数
+//道具整理的移动函数
 function itemMove(x,y,bagArr,ckArr){
   	if(MouseOnObj(x, y, DJZLBg)){//如果鼠标在道具整理的背景的图片内
 	  clearArr(everything2);//先把放绿色移动框的数组清空掉
@@ -919,7 +919,7 @@ function cangKuClick(x,y,arr2,caseNum){
 	    else if(dingzhukuangRight[5]==1){dingzhukuangRight[5]=0;clearArr(everything1);}
    }else if(x>DJZLBg.sx+366&&x<DJZLBg.sx+469&&y>DJZLBg.sy+384&&y<DJZLBg.sy+412){//丢弃按钮
      changeItemNumber();
-	 itemOption=3;
+	 itemOption=12;
    }
     drawBigMap();
 

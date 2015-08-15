@@ -188,29 +188,29 @@ function cCheck(e) {
 			else if(itemOption==1){backToStoreHouse(rolesArray[big_role_index],rolesArray[big_role_index].items,storehouse.additems,5,dingzhukuangLeft,true);}
 			//如果点击了仓库的放入背包
 			else if(itemOption==2){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,false);}
-			//如果点击了仓库的丢弃
-			else if(itemOption==3){
-				if(tempp==00){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
-				else if(tempp==10){backToBag(rolesArray[big_role_index],storehouse.addskills,rolesArray[big_role_index].skills,5,dingzhukuangRight,true);}
-				else if(tempp==20){backToBag(rolesArray[big_role_index],storehouse.addequips,rolesArray[big_role_index].equips,5,dingzhukuangRight,true);}
-				else if(tempp==30){backToBag(rolesArray[big_role_index],storehouse.addpowers,rolesArray[big_role_index].powers,5,dingzhukuangRight,true);}
-				else {backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
-		//	backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);
-				}
+			//如果点击了整理过程中仓库的丢弃
+			else if(itemOption==3){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
 			//如果点击了道具商店的贩卖
 			else if(itemOption==8){backToStoreHouse(rolesArray[big_role_index],storehouse.additems,store.items,9,dingzhukuangLeft,false);}
 			//如果点击了道具商店的购买
 			else if(itemOption==9){backToBag(rolesArray[big_role_index],store.items,storehouse.additems,9,dingzhukuangRight,false);}
 			//如果点击了武器商店的购买
 			else if(itemOption==11){backToBag(rolesArray[big_role_index],store.equips,storehouse.addequips,10,dingzhukuangRight,false);}
+			//如果点击了单独仓库的丢弃
+			else if(itemOption==12){
+				if(tempp==00){backToBag(rolesArray[big_role_index],storehouse.additems,rolesArray[big_role_index].items,5,dingzhukuangRight,true);}
+				else if(tempp==10){backToBag(rolesArray[big_role_index],storehouse.addskills,rolesArray[big_role_index].skills,5,dingzhukuangRight,true);}
+				else if(tempp==20){backToBag(rolesArray[big_role_index],storehouse.addequips,rolesArray[big_role_index].equips,5,dingzhukuangRight,true);}
+				else if(tempp==30){backToBag(rolesArray[big_role_index],storehouse.addpowers,rolesArray[big_role_index].powers,5,dingzhukuangRight,true);}
+				}
 		}
 		else if(MouseOnObj(x, y, cancel)){//点击取消
 			clearArr(confirmArray);
 			dragNum=0;
 			itemNumChange=false;
 			if(itemOption==8||itemOption==9){itemStore=true;}
-			else if(itemOption==11){ equipStore=true;}
-			else if(itemOption==3){cangKuShow=true;}
+			else if(itemOption==11){equipStore=true;}
+			else if(itemOption==12){cangKuShow=true;}
             else{DJZhengLi=true;}
 			drawBigMap();
 		}else if(MouseOnObj(x, y, minusButton)){//点击减少按钮
@@ -260,7 +260,7 @@ function cCheck(e) {
 			      dragNum++;
 				  huaKuai.sx=dragNum*180/rolesArray[big_role_index].items[index].num+274;
 			   }
-		   }else if(itemOption==2||itemOption==3||itemOption==9||itemOption==11){
+		   }else if(itemOption==2||itemOption==3||itemOption==9||itemOption==11||itemOption==12){
 		       if(dingzhukuangRight[0]==1){index=0;}
 			   else if(dingzhukuangRight[1]==1){index=1;}
 			   else if(dingzhukuangRight[2]==1){index=2;}
@@ -291,15 +291,15 @@ function cCheck(e) {
 				      }
 				   }
 			   }
-			   else if(itemOption==3&&tempp==30){
+			   else if(itemOption==12&&tempp==30){
 				   if(dragNum<storehouse.addpowers[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addpowers[index].num+274;}
 				 }
-				 else if(itemOption==3&&tempp==10){
+				 else if(itemOption==12&&tempp==10){
 				   if(dragNum<storehouse.addskills[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addskills[index].num+274;}
 				 }
-				 else if(itemOption==3&&tempp==20){
+				 else if(itemOption==12&&tempp==20){
 				   if(dragNum<storehouse.addequips[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addequips[index].num+274;}
 				 }

@@ -136,15 +136,15 @@ function mMove(e) {
 						  dragNum=Math.floor(teamMoney/returnEquipPrice(store.equips[index].id));
 					   }
 				   }
-				   else if(itemOption==3&&tempp==30){
+				   else if(itemOption==12&&tempp==30){
 					   dragNum=1;
 					  // dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addpowers[index].num);
 				   }
-				   else if(itemOption==3&&tempp==10){
+				   else if(itemOption==12&&tempp==10){
 					   dragNum=1;
 					  // dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addpowers[index].num);
 				   }
-				   else if(itemOption==3&&tempp==20){				   
+				   else if(itemOption==12&&tempp==20){				   
 					   dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addequips[index].num);
 				   }
 					   else{dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.additems[index].num);}
