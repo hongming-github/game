@@ -387,14 +387,18 @@ function itemClick(x,y,bagArr,ckArr,caseNum){
 	}
 	if(MouseOnObj(x, y, rightArrow)){
 		   console.log(big_role_index+"        "+rolesArray.length);
-		   if(big_role_index<rolesArray.length-1){
+		   if(big_role_index<=rolesArray.length-1){
 			   big_role_index++;
+			   if(big_role_index>rolesArray.length-1)
+			   {big_role_index=0;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	}else
 	if(MouseOnObj(x, y, leftArrow)){
-		   if(0<big_role_index){
+		   if(big_role_index>=0){
 			   big_role_index--;
+			   if(big_role_index<0)
+			   {big_role_index=rolesArray.length-1;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	}else
@@ -535,14 +539,18 @@ function equipClick(x,y,arr1,arr2,caseNum){
 	     aa[i]=1;
 	}
 	if(MouseOnObj(x, y, rightArrow)){
-		   if(big_role_index<rolesArray.length-1){ 
+		   if(big_role_index<=rolesArray.length-1){ 
 			   big_role_index++;
+			   if(big_role_index>rolesArray.length-1)
+               {big_role_index=0;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	}else
 	if(MouseOnObj(x, y, leftArrow)){
-		   if(0<big_role_index){
+		   if(big_role_index>=0){
 			   big_role_index--;
+			   if(big_role_index<0)
+			   {big_role_index=rolesArray.length-1;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	}else
@@ -636,13 +644,17 @@ function powerClick(x,y,arr1,arr2,caseNum){
 	   b[j]=1;
    }
    if(MouseOnObj(x, y, rightArrow)){
-		   if(big_role_index<rolesArray.length-1){ 
+		   if(big_role_index<=rolesArray.length-1){ 
 			   big_role_index++;
+			   if(big_role_index>rolesArray.length-1)
+			   {big_role_index=0;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	}else if(MouseOnObj(x, y, leftArrow)){
-		   if(0<big_role_index){
+		   if(big_role_index>=0){
 			   big_role_index--;
+			   if(big_role_index<0)
+			   {big_role_index=rolesArray.length-1;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	}else if(MouseOnObj(x, y, CloseImg)){//点击在取消按钮上
@@ -740,14 +752,18 @@ function skillClick(x,y,arr1,arr2,caseNum){
 	   b[j]=1;
 	 }
 	  if(MouseOnObj(x, y, rightArrow)){
-		   if(big_role_index<rolesArray.length-1){ 
+		   if(big_role_index<=rolesArray.length-1){ 
 			   big_role_index++;
+			   if(big_role_index>rolesArray.length-1)
+			   {big_role_index=0;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	 }else
 	 if(MouseOnObj(x, y, leftArrow)){
-		   if(0<big_role_index){
+		   if(big_role_index>=0){
 			   big_role_index--;
+			   if(big_role_index<0)
+			   {big_role_index=rolesArray.length-1;}
 			   ZhengLi(rolesArray[big_role_index],caseNum);
 		   }
 	 }else
@@ -806,7 +822,7 @@ function duiyuanClick(x,y){
 	   }else if(MouseOnObj(x, y, leftArrow)){
 		  if(big_role_index>=0){
 			   big_role_index--;
-			   if(big_role_index < 0){big_role_index=rolesArray.length-1};
+			   if(big_role_index < 0){big_role_index=rolesArray.length-1;}
 			   ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	           drawArr(startShow);
 			   teamMember(rolesArray[big_role_index],0);
@@ -814,7 +830,7 @@ function duiyuanClick(x,y){
 	   }else if(MouseOnObj(x, y, rightArrow)){
 		   if(big_role_index<=(rolesArray.length-1)){			  
 			    big_role_index++;
-				if(big_role_index > rolesArray.length-1){big_role_index=0};
+				if(big_role_index > rolesArray.length-1){big_role_index=0;}
 				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 	            drawArr(startShow);
 			    teamMember(rolesArray[big_role_index],0);

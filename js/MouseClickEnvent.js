@@ -255,7 +255,7 @@ function cCheck(e) {
 			   else if(dingzhukuangLeft[3]==1){index=3;}
 			   else if(dingzhukuangLeft[4]==1){index=4;}
 
-		//	   console.log(index+"                  "+dragNum+"             rolesArray[big_role_index].items[index].num             "+rolesArray[big_role_index].items[index].num);
+		//	   console.log(index+" "+dragNum+"rolesArray[big_role_index].items[index].num"+rolesArray[big_role_index].items[index].num);
 			   if(dragNum<rolesArray[big_role_index].items[index].num){
 			      dragNum++;
 				  huaKuai.sx=dragNum*180/rolesArray[big_role_index].items[index].num+274;
