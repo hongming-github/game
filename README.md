@@ -27,11 +27,19 @@
       </tr>
       <tr>
          <td>仓库中选择数量进度条偏移</td>
-         <td>未解决</td>
+         <td>解决</td>
       </tr>
       <tr>
          <td>整理时和独立仓库有冲突</td>
          <td>解决</td>
+      </tr>
+      <tr>
+         <td>人工智能优化</td>
+         <td>未解决</td>
+      </tr>
+      <tr>
+         <td>攻击框架</td>
+         <td>未解决</td>
       </tr>
    </tbody>
 </table>
