@@ -93,7 +93,7 @@ function mMove(e) {
 	if(itemNumChange){//跳出改变道具的数量的框
 	   if(isdown){//如果鼠标按下了
 		   var movex=mx-mdownx;
-		   if((huaKuai.sx==274&&movex>0)||(huaKuai.sx==454&&movex<0)||(huaKuai.sx>274&&huaKuai.sx<454)){//如果滑块的坐标在基准线的范围内，【274,454】  
+		   if((huaKuai.sx==274&&movex>0)||(huaKuai.sx==454&&movex<0)||(huaKuai.sx>274&&huaKuai.sx<454) && itemOption!=12){//如果滑块的坐标在基准线的范围内，【274,454】  
 			   //更新滑块的坐标
 			   huaKuai.sx=huaKuai.mapX+movex;
 			   if(huaKuai.sx>454){huaKuai.sx=454;}
@@ -136,23 +136,40 @@ function mMove(e) {
 						  dragNum=Math.floor(teamMoney/returnEquipPrice(store.equips[index].id));
 					   }
 				   }
-				   else if(itemOption==12&&tempp==30){
-					   dragNum=1;
-					  // dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addpowers[index].num);
-				   }
-				   else if(itemOption==12&&tempp==10){
-					   dragNum=1;
-					  // dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addpowers[index].num);
-				   }
-				   else if(itemOption==12&&tempp==20){				   
-					   dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.addequips[index].num);
-				   }
-					   else{dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.additems[index].num);}
+					else{dragNum= Math.ceil(((huaKuai.sx-274)/180)*storehouse.additems[index].num);}
 			   }    
 			   selsectNum.name="您选择了  "+dragNum+"  份该道具";		
 		   }
-		   drawBigMap();
-	   }else{ 
+			if((huaKuai.sx==394&&movex>0)||(huaKuai.sx==574&&movex<0)||(huaKuai.sx>394&&huaKuai.sx<574)&&itemOption==12){//单独仓库中的滑块如果滑块的坐标在基准线的范围内，【394,574】  
+			   //更新滑块的坐标
+			   huaKuai.sx=huaKuai.mapX+movex;
+			   if(huaKuai.sx>574){huaKuai.sx=574;}
+			   else if(huaKuai.sx<394){huaKuai.sx=394;}
+			   //根据滑块的坐标计算出数量
+			   var index;//用来定位是哪个道具的数量
+			   if(dingzhukuangRight[0]==1){index=0;}
+				   else if(dingzhukuangRight[1]==1){index=1;}
+				   else if(dingzhukuangRight[2]==1){index=2;}
+				   else if(dingzhukuangRight[3]==1){index=3;}
+				   else if(dingzhukuangRight[4]==1){index=4;}
+				   else if(dingzhukuangRight[5]==1){index=5;} 
+				   if(tempp==00){
+					   dragNum= Math.ceil(((huaKuai.sx-394)/180)*storehouse.additems[index].num);
+				   }
+		           else if(tempp==30){
+					   dragNum=1;
+				   }
+				   else if(tempp==10){
+					   dragNum=1;
+				   }
+				   else if(tempp==20){				   
+					   dragNum= Math.ceil(((huaKuai.sx-394)/180)*storehouse.addequips[index].num);
+				   }
+			   }			  
+			   selsectNum.name="您选择了  "+dragNum+"  份该道具"; 
+		       drawBigMap();
+	       } 
+	   else{ 
 		   huaKuai.mapX=huaKuai.sx;
 		   }//鼠标松开的时候更新滑块的mapX.
 	}else
