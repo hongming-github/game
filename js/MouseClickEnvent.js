@@ -246,14 +246,23 @@ function cCheck(e) {
 			   else if(itemOption==12&&tempp==00){
 				      if(dragNum>0){
 					  dragNum--;
-					  huaKuai.sx=dragNum*180/storehouse.additems[index].num+394;}
+					  huaKuai.sx=dragNum*180/storehouse.additems[index].num+394;
+					  }
 				 }
 			   else if(itemOption==12&&tempp==20){
 				   	  if(dragNum>0){
                       dragNum--;
 					  huaKuai.sx=dragNum*180/storehouse.addequips[index].num+394;
-				   }
-			   }
+				      }
+			     }
+			   else if(itemOption==12&&tempp==10){
+					  dragNum=1;
+					  huaKuai.sx=dragNum*180/storehouse.addskills[index].num+394;
+				 }
+			   else if(itemOption==12&&tempp==30){
+                      dragNum=1;
+					  huaKuai.sx=dragNum*180/storehouse.addpowers[index].num+394;
+			     }
 			   else{if(dragNum>0){dragNum--;huaKuai.sx=dragNum*180/storehouse.additems[index].num+274;}}
 		   }
 		   selsectNum.name="您选择了  "+dragNum+"  份该道具";
@@ -305,17 +314,15 @@ function cCheck(e) {
 				   if(dragNum<storehouse.additems[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.additems[index].num+394;}
 				 }
-			    else if(itemOption==12&&tempp==30){
-				   if(dragNum<storehouse.addpowers[index].num)
-				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addpowers[index].num+274;}
-				 }
-				 else if(itemOption==12&&tempp==10){
-				   if(dragNum<storehouse.addskills[index].num)
-				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addskills[index].num+274;}
-				 }
-				 else if(itemOption==12&&tempp==20){
+				else if(itemOption==12&&tempp==20){
 				   if(dragNum<storehouse.addequips[index].num)
 				   {dragNum++;huaKuai.sx=dragNum*180/storehouse.addequips[index].num+394;}
+				 }
+				else if(itemOption==12&&tempp==10){				   
+				   dragNum=1;huaKuai.sx=dragNum*180/storehouse.addskills[index].num+394;
+				 }
+			    else if(itemOption==12&&tempp==30){
+				   dragNum=1;huaKuai.sx=dragNum*180/storehouse.addpowers[index].num+394;
 				 }
 			   else{if(dragNum<storehouse.additems[index].num){dragNum++;huaKuai.sx=dragNum*180/storehouse.additems[index].num+274;}}
 		   }

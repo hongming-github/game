@@ -156,10 +156,7 @@ function mMove(e) {
 				   if(tempp==00){
 					   dragNum= Math.ceil(((huaKuai.sx-394)/180)*storehouse.additems[index].num);
 				   }
-		           else if(tempp==30){
-					   dragNum=1;
-				   }
-				   else if(tempp==10){
+		           else if(tempp==10||tempp==30){
 					   dragNum=1;
 				   }
 				   else if(tempp==20){				   

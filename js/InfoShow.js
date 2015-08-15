@@ -1736,6 +1736,7 @@ function DZGold(index,which){
 var huaKuai;//滑块
 var selsectNum;//表示已经选中多少的字符串
 function changeItemNumber(option){
+ if(tempp==10||tempp==30){dragNum=1;}
  itemNumChange=true;
  DJZhengLi=false;
  itemStore=false;
@@ -2042,8 +2043,8 @@ function backToBag(obj,fromArr,destArr,caSeNum,select,drop){
 	      if(caSeNum==5){
 			  //如果是丢弃
 		      if(drop){
-				  console.log(fromArr[i].num+"    ");
-                  fromArr[i].num-=dragNum;
+				  console.log(fromArr[i].num+"   1 ");
+                  fromArr[i].num-=dragNum;console.log(dragNum+"aa"+fromArr[i].num+"   2 ");
 				  if(fromArr[i].num!=0){
 					  var copyItem1=new item();
 					  copyItem1.id=fromArr[i].id;
